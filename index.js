@@ -3,7 +3,7 @@ const request = require('request');
 const parse = require('./parse.js');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const LEVEL_DIFFICULTY = {
     '0': 'NA',
